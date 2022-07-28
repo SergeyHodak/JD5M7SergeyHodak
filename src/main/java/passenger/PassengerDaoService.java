@@ -5,7 +5,8 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-public class PassengerDaoService {
+//Сервіс побудований на JDBC
+public class PassengerDaoService implements IPassengerDaoService{
     private PreparedStatement createSt;
     private PreparedStatement getByPassportSt;
 
