@@ -19,10 +19,10 @@ public class ListCommand implements Command {
         LinkService linkService = ServiceProvider.get(LinkService.class);
 
         //хардкод кусочок
-        Link link = new Link();
-        link.setShortLink("f4g4F");
-        link.setLink("https://google.com");
-        linkService.save(link);
+//        Link link = new Link();
+//        link.setShortLink("f4g4F");
+//        link.setLink("https://google.com");
+//        linkService.save(link);
 
         Context simpleContext = new Context(
                 req.getLocale(),
