@@ -37,4 +37,9 @@ public class FrontController extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         commandService.process(req, resp, engine);
     }
+
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        commandService.process(req, resp, engine);
+    }
 }

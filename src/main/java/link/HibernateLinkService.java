@@ -23,7 +23,8 @@ public class HibernateLinkService implements LinkService {
     public void save(Link link) {
         Session session = openSession();
             Transaction transaction = session.beginTransaction();
-                session.persist(link);
+            session.merge(link);
+            //session.persist(link); // не оновлює існуючіі данні
             transaction.commit();
         session.close();
     }

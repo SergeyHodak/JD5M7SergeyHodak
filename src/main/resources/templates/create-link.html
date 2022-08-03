@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Create link</title>
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container mt-3">
+        <form action="/link/create" method="POST">
+            <div class="card">Create new link</div>
+            <div class="card-body">
+                <label for="fullUrl" class="form-label">Enter URL to shorten</label>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="fullUrl" name="fullUrl">
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Short link</button>
+        </form>
+    </div>
+</body>
+</html>
